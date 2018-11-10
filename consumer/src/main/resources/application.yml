@@ -1,0 +1,14 @@
+server:
+  port: 8080
+spring:
+  dubbo:
+    application:
+      name: business-consumer
+    registry:
+      protocol: zookeeper
+      address: localhost:2181
+    protocol:
+      name: dubbo
+      port: 20880
+      host: localhost
+    scan: com.conhj.consumer
